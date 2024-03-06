@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav class = "nav d-flex align-items-center w-md-100 sticky-top navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="./images/logo.png" alt="logo" class = "h-75 mx-2">
+      <div class = "links d-flex justify-content-around gradient-text collapse navbar-collapse" id="navbarSupportedContent">
+        <a href="#weeks">Week's offer</a>
+        <a href="#summer">Welcome Summer</a>
+        <a href="#daily">Daily Offer</a>
+        <a href="#last-miute">Last Minute</a>
+        <a href="#testimonial">Testimonial</a>
+      </div>
+    </nav>
+
+    <div class="jumbotron p-4 p-md-5 rounded d-flex justify-content-center mt-4">
+      <div class="col-md-6 px-2 w-100 d-flex flex-column align-items-center">
+          <h1 class="display-4 font-italic ">
+              Travelling is a matter of courage.
+          </h1>
+          <p class="lead my-3">
+              Find the best offers and discover a new version of yourself.
+          </p>
+      </div>
+    </div>
+
+    <div class="container">
+      <button class="collapsing" id = "first-button"></button>
+      <div class="row d-flex justify-content-between align-items-center" id = "first-section">
+        <h2 class = "text-center my-4" id = "weeks">Week's offer</h2>
+        <div class="card col-lg-3 mb-2 p-0 card-personalised" style="width: 16rem;">
+          <img class="card-img-top" src="./images/vienna.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Vienna, Austria</h5>
+            <p class="card-text">A beautiful city full of bright colours and the best Christmas' markets.</p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 mb-2 p-0 card-personalised" style="width: 16rem;">
+          <img class="card-img-top" src="./images/lapponia.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">LapLand, Finland</h5>
+            <p class="card-text">Come looking for Santa Claus and his elves trying to make happy kids all over the world.</p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 d-none d-md-block mb-2 p-0 card-personalised" style="width: 16rem;">
+          <img class="card-img-top" src="./images/bozen.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Bozen, Italy</h5>
+            <p class="card-text">If you want to feel the magical atmosphere of Christmas while sipping a hot chocolate, this is your place to stay.</p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 d-none d-lg-block mb-2 p-0 card-personalised" style="width: 16rem;">
+          <img class="card-img-top" src="./images/krakow.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Krakow, Poland</h5>
+            <p class="card-text">To find peace, joy and delicious food to eat while walking around colourful street, there is no better place to go!</p>
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="collapsing" id = "second-button"></button>
+      <div class="row d-flex justify-content-between align-items-center" id = "second-section">
+        <h2 class = "text-center my-4" id = "summer">Welcome Summer</h2>
+        <div class="card col-6 mb-2 p-0 card-personalised" style="width: 12rem;">
+          <img class="card-img-top" src="./images/crete.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Crete, Greece</h5>
+            <p class="card-text">Wonderful beaches, colourful fishes and the essence of the ancient world surrounding you. It's not just a dream, it's Greece!</p>
+            <a href="#" class="btn">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-6 mb-2 p-0 card-personalised" style="width: 12rem;">
+          <img class="card-img-top" src="./images/algarve.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Algarve, Portugal</h5>
+            <p class="card-text">Seeking for adventure in a wild and youthful place? Come join us on the Algarve tour! Let the waves of the sea bring you in another dimension.</p>
+            <a href="#" class="btn">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-6 mb-2 d-none d-md-block p-0 card-personalised" style="width: 12rem;">
+          <img class="card-img-top" src="./images/azzorre.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Azores, Portugal</h5>
+            <p class="card-text">This is the place to be if you want to enjoy your summer only hearing the sound of nature and discovering new animals.</p>
+            <a href="#" class="btn">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-6 mb-2 d-none d-lg-block p-0 card-personalised" style="width: 12rem;">
+          <img class="card-img-top" src="./images/corsica.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Corsica, France</h5>
+            <p class="card-text">Ever wondered if there is a place where you can have mozzarella and croissant at the same time? Corsica is the answer.</p>
+            <a href="#" class="btn">Go somewhere</a>
+          </div>
+        </div> 
+        <div class="card col-6 mb-2 d-none d-lg-block p-0 card-personalised" style="width: 12rem;">
+          <img class="card-img-top" src="./images/fiordi.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Vestland, Norway</h5>
+            <p class="card-text">Tired of always having the same old sun and sea holiday? In Norway you'll find the peace and adventure you are looking for.</p>
+            <a href="#" class="btn">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card col-6 mb-2 d-none d-lg-block p-0 card-personalised" style="width: 12rem;">
+          <img class="card-img-top" src="./images/caraibi.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Caribbean, America</h5>
+            <p class="card-text">An evergreen, a must-have in any bucket-list. Come to enjoy your cocktail in front of the endless Caribbean sea.</p>
+            <a href="#" class="btn">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+
+      <h2 class = "text-center my-4">Daily Offer</h2>
+      <button class="collapsing" id = "third-button"></button>
+      <div class="card mb-3 w-100" id = "third-section">
+          <div class="row g-0">
+            <div class="col-md-8">
+              <img src="./images/marocco.jpg" class="img-fluid rounded-start p-0 my-0" alt="...">
+            </div>
+            <div class="col-md-4">
+              <div class="card-body">
+                <h5 class="card-title">Chefchaouen, Morocco</h5>
+                <p class="card-text">Bathe yourself in a thousand shades of blue, without even needing a swimming suit.</p>
+                <p class="card-text"><small class="text-muted">250euros</small></p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <button class="collapsing" id = "fourth-button"></button>
+      <div class="row d-flex justify-content-between align-items-center" id = "fourth-section">
+          <h2 class = "text-center my-4" id = "last-miute">Last Minute</h2>
+          <div class="card col-6 mb-2" style="width: 12rem;">
+            <p><img class="card-img-top" src="..." alt="Card image cap"></p>
+          </div>
+          <div class="card col-6 mb-2" style="width: 12rem;">
+            <p><img class="card-img-top" src="..." alt="Card image cap"></p>
+          </div>
+          <div class="card col-6 mb-2 d-none d-md-block" style="width: 12rem;">
+            <p><img class="card-img-top" src="..." alt="Card image cap"></p>
+          </div>
+          <div class="card col-6 mb-2 d-none d-lg-block" style="width: 12rem;">
+            <p><img class="card-img-top" src="..." alt="Card image cap"></p>
+          </div> 
+          <div class="card col-6 mb-2 d-none d-lg-block" style="width: 12rem;">
+            <p><img class="card-img-top" src="..." alt="Card image cap"></p>
+          </div>
+          <div class="card col-6 mb-2 d-none d-lg-block" style="width: 12rem;">
+            <p><img class="card-img-top" src="..." alt="Card image cap"></p>
+          </div>
+      </div>
+
+      <button class="collapsing active" id = "fifth-button"></button>
+      <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel" id = "fifth-section">
+          <h2 id="testimonial" class="text-center my-4">TESTIMONIAL</h2>
+          <div class="carousel-inner slide my-4">
+            <div class="carousel-item active">
+              <div class="card mx-auto w-50">
+                <div class="card-body d-flex flex-column align-items-center" >
+                  <img class="card-img-top w-25" src="./images/user.png" alt="Card image cap">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card mx-auto w-50">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img class="card-img-top w-25" src="./images/user2.png" alt="Card image cap">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">egdhszxthujxrsutxr5ysz.</p>
+                  <a href="#" class="btn">Go somewhere</a>
+                </div>
+              </div>
+            </div>  
+            <div class="carousel-item">
+              <div class="card mx-auto w-50">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img class="card-img-top w-25" src="./images/user3.jpg" alt="Card image cap">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">egdhszxthujxrsutxr5ysz.</p>
+                  <a href="#" class="btn">Go somewhere</a>
+                </div>
+              </div>
+            </div>  
+            <div class="carousel-item">
+              <div class="card mx-auto w-50">
+                <div class="card-body d-flex flex-column align-items-center">
+                  <img class="card-img-top w-25" src="./images/user4.png" alt="Card image cap">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">egdhszxthujxrsutxr5ysz.</p>
+                  <a href="#" class="btn">Go somewhere</a>
+                </div>
+              </div>
+            </div>            
+          </div> 
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <footer class="d-flex justify-content-evenly align-items-center">
+      <div>
+        <p class="d-inline">Travelling Srl</p>
+        <p class="m-0">Via dei Matti, 0 (CO) - ITALY</p>
+        <p class="m-0">Tel. <a href="tel:80009000313">80009000313</a></p>
+        <p class="m-0">Email <a href="mailto:email.mail@email.it">email.mail@email.it</a></p>
+      </div>
+      <button class="h-fit-content">Contact us</button>
+    </footer>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src = "script.js"></script>
+  </body>
+</html>
